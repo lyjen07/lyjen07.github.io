@@ -1,11 +1,65 @@
 ---
-title: "About this website"
+title: "About Jen"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# About
 
-This website is pretty great
+Hello! My name is Jennifer Li, and I am a first year MS Biostatistics student at [Columbia University](https://www.columbia.edu/). I graduated from the [University of Colorado Boulder](https://www.colorado.edu/) with a background in Molecular, Cellular & Developmental Biology, Biochemistry, and Integrative Physiology. Also, I am passionate about playing piano and skiing.
+
+
+# Education
+
+**Columbia University Irving Medical Center**, New York, NY
+
+M.S. Biostatistics: Public Health Data Science Track | Expected graduation: May 2025
+
+**University of Colorado Boulder**, Boulder, CO
+
+Molecular, Cellular & Developmental Biology; Biochemistry; Integrative Physiology | GPA: 3.51/4.00
+
+
+# Research Experience
+
+**Drug Discovery**, _Fall 2017_
+
+Tested a variety of antibiotics on Salmonella.
+
+Analyzed data and summarized the effects of the drugs.
+
+**Cell Biology**, _Fall 2019_
+
+Designed primers for genes of interest and tested them via PCR and gel electrophoresis.
+
+Analyzed the gene expression in different phases.
+
+**Biochemistry**, _Fall 2020_
+
+Purified LDH using ion exchange, affinity chromatography, gel filtration chromatography.
+
+Verified the purity of the LDH samples via gel electrophoresis and western blot.
+
+Extraction and purification of unknown RFP using affinity chromatography.
+
+
+# Work Experience
+
+**Drug Registrar Specialist**, June 2021 - Oct. 2021
+
+Registered declaration of in vitro diagnostic reagents (immunodiagnostic reagents), including writing,collecting and organizing, reviewing and submitting registration information, tracking the registration process, etc.
+
+Compiled and submitted registration declarations of a Phase I Idiopathic pulmonary arterial hypertension (IPAH) project in accordance with regulatory requirements, and tracked and provided feedback on the registration declarations accepted for review.
+
+Reported subsequent changes to product registration, assisted in reviewing relevant records, and coordinated work with other departments.
+
+Provided support throughout the process of product development in terms of national regulations, and kept abreast of the latest regulatory policies for product registration and clinical trials.
+
+**Clinical Research Associate**, Nov. 2021 - March 2022
+
+Participated in the research, eligibility assessment and selection of trial centers (hospitals) and investigators of malignant pleural effusion and prostate cancer studies.
+
+Performed investigational product inventory in a Phase III postoperative analgesia program: participated in the verification of distribution, recycling and management of drug-related information. Ensured the return of unused materials to designated location and verified destruction as required.
+
+Performed on-site monitoring visits in Phase I ischemic stroke program.
