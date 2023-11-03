@@ -1,0 +1,100 @@
+---
+title: "p8105_hw4_yl5227"
+author: "Jennifer Li"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+
+library(p8105.datasets)
+
+data("ny_noaa")
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### The Relationship between Maximum and Minimum Temperature
+
+```{r}
+noaa_ave =
+  ny_noaa |> 
+  mutate(
+    tmax = as.numeric(tmax),
+    tmin = as.numeric(tmin)
+  ) |> 
+  filter(
+    tmax < 550,
+    tmin < 500
+  ) |> 
+  group_by(date) |> 
+  summarise(
+    ave_tmax = mean(tmax, na.rm =TRUE)/10,
+    ave_tmin = mean(tmin, na.rm =TRUE)/10,
+    ave_prcp = mean(prcp, na.rm =TRUE)/10
+  ) |> 
+  mutate(
+    ave_tmax = round(ave_tmax, 2),
+    ave_tmin = round(ave_tmin, 2),
+    text_lab = str_c("Precipitation(mm): ", round(ave_prcp,2))
+  )
+
+noaa_ave |> 
+  plot_ly(
+    x = ~ave_tmin,
+    y = ~ave_tmax,
+    type = "scatter",
+    mode = "markers",
+    color = ~ave_prcp,
+    text = ~text_lab,
+    alpha = 0.1
+  )
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### The Distribution of Temperature Extremes
+
+```{r}
+noaa_hist =
+  noaa_ave |> 
+  pivot_longer(
+    ave_tmin:ave_tmax,
+    names_to = "extreme",
+    names_prefix = "ave_",
+    values_to = "temp"
+  ) |> 
+  ggplot(aes(x = temp, fill = extreme)) +
+  geom_histogram(alpha = 0.7) +
+  xlab("temperature (C)")
+
+ggplotly(noaa_hist)
+```
+
+### Change of Temperature Averaged over Station
+
+```{r}
+noaa_line =
+  noaa_ave |> 
+  pivot_longer(
+    ave_tmin:ave_tmax,
+    names_to = "extreme",
+    names_prefix = "ave_",
+    values_to = "temp"
+  ) |> 
+  ggplot(aes(x = date, y = temp, color = extreme)) +
+  geom_line(alpha = 0.3) +
+  ylab("temperature (C)") +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y")
+
+ggplotly(noaa_line)
+```
+

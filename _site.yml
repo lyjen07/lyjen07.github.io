@@ -7,10 +7,8 @@ navbar:
       href: about.html
     - text: "Homeworks"
       href: homeworks.html
-    - text: "Plotly"
-      href: plotly.html
-    - text: "Dashboard"
-      href: dashboard.html
+    - text: "Problem 2"
+      href: p8105_hw4_yl5227.html
     - icon: fa-envelope fa-lg
       href: mailto:<yl5227@cumc.columbia.edu>
     - icon: fa-github fa-lg
