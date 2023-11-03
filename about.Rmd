@@ -67,3 +67,7 @@ Performed on-site monitoring visits in Phase I ischemic stroke program.
 # Certifications
 
 **Good Clinical Practice**, _NMPA_
+
+# Contact info
+* [Github: lyjen07](https://github.com/lyjen07)
+* [Email: yl5227@cumc.columbia.edu](yl5227@cumc.columbia.edu)
