@@ -11,9 +11,17 @@ output:
 
 You can find my [personal info](about.html) and my homeworks for P8105.
 
+
+A photo from my concert performance at Guangzhou Opera House.
+
+<img src="images/WechatIMG203.jpg" style="width:75%">
+
+
 Here are Emmett(left) and Gabrielle(right):
 
-![](images/IMG_5193.jpg)
+<img src="images/WechatIMG204.jpg" style="width:75%">
+
+
 
 # Here's a section about Problem 2
 
