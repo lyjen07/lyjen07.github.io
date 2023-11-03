@@ -6,21 +6,20 @@ output:
     toc_float: true
 ---
 
-# Here is a nice project:
+Here are the homeworks and midterm project I have done in P8105.
+
+# Homeworks
+
+*[Homework 1](https://github.com/lyjen07/p8105_hw1_yl5227)
+
+*[Homework 2](https://github.com/lyjen07/p8105_hw2_yl5227)
+
+*[Homework 3](https://github.com/lyjen07/p8105_hw3_yl5227)
+
+*[Homework 4](https://github.com/lyjen07/lyjen07.github.io)
 
 
-You can also still use R!
+# Projects
 
-```{r}
-library(tidyverse)
+*[Midterm](https://github.com/lyjen07/p8105_mtp_yl5227)
 
-plot_df = 
-  tibble(
-    x = runif(100),
-    y = 1 + 2 * x + rnorm(100)
-  )
-
-plot_df |> 
-  ggplot(aes(x = x, y = y)) +
-  geom_point()
-```

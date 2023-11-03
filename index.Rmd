@@ -9,7 +9,7 @@ output:
 # This is Jen's website
 
 
-You can find my [personal info](about.html) and my homeworks for P8105.
+You can find my [personal info](about.html) and my [homeworks](homeworks.html) for P8105.
 
 
 A photo from my concert performance at Guangzhou Opera House.
